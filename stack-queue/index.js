@@ -5,7 +5,7 @@ class Node{
     }
 }
 
-class Stack{ // implement stack with linked list
+class linkedListStack{ // implement stack with linked list
     constructor(){
         this.top = null;
         this.bottom = null;
@@ -52,3 +52,23 @@ class Stack{ // implement stack with linked list
     }
 
 }
+
+class arrayStack{
+    constructor(){
+      this.array = [];
+    }
+  
+    peek(){
+      return this.array[this.array.length-1];
+    }
+  
+    push(value){
+      this.array.push(value);
+      return this;
+    }
+  
+    pop(){
+      this.array.pop();
+      return this;
+    }
+  }
